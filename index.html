@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/images/joystick_favicon.png"
-    />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -20,5 +16,15 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <h2>To do's</h2>
+      <form type="text">
+        <input type="text" id="enter-list" placeholder="Add to your list..." />
+        <button for="enter-list" id="enter" class="btn">+Add</button>
+        <ul id="item" class="item"></ul>
+      </form>
+      <script src="./scripts/script.js"></script>
+    </div>
+  </body>
 </html>

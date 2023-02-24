@@ -10,9 +10,11 @@
 }
 
 :root {
-  --grey-bg: #e5e5e5;
-  --blck-bg: #000000;
-  --grey-txt: #646464;
+  --grey-bg: #887f81;
+  --drk-grey-bg: #3d3f41;
+  --grey-clr: rgba(136, 127, 129, 0.3);
+  --blck-clr: #17191d;
+  --silver-txt: #f2f2f7;
   --white-txt: #fdfdfd;
   --max-width: 1140px;
 }
@@ -24,7 +26,15 @@ html {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  background-color: ;
+  background: linear-gradient(
+    135deg,
+    var(--grey-bg) 10%,
+    var(--drk-grey-bg) 80%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 a {
@@ -38,4 +48,58 @@ li {
 img {
   width: 100%;
   height: auto;
+}
+
+.main-container {
+  text-align: center;
+  color: var(--silver-txt);
+  background: linear-gradient(
+    135deg,
+    var(--drk-grey-bg) 20%,
+    var(--blck-clr) 80%
+  );
+  max-width: 100vw;
+  max-height: 100%;
+  margin: 3rem auto;
+  padding: 3rem;
+  border-radius: 4rem;
+}
+
+h2 {
+  margin-top: 0rem;
+  color: var(--silver-txt);
+}
+
+input {
+  background-color: var(--grey-clr);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background: linear-gradient(
+    135deg,
+    var(--drk-grey-bg) 80%,
+    var(--grey-clr) 20%
+  );
+  box-shadow: 1px 1px 5px 4px var(--blck-clr);
+  color: var(--silver-txt);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn {
+  border: none;
+  width: auto;
+  height: 2.149375rem;
+  border-radius: 0.5rem;
+  color: var(--silver-txt);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    var(--drk-grey-bg) 80%,
+    var(--grey-clr) 20%
+  );
+  box-shadow: 1px 1px 5px 4px var(--blck-clr);
+  cursor: pointer;
 }
