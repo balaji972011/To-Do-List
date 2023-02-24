@@ -12,7 +12,7 @@ const displayItems = function () {
   items.forEach((item) => {
     const listEl = document.createElement(`li`);
     listEl.classList.add(`item-list`);
-    listEl.innerHTML = `${item.value} <button onclick='editItem(${item.key})'><i class="fa-regular fa-pen-to-square"></i></i></button> <button onclick='deleteItem(${item.key})'><i class="fa-solid fa-trash-can"></i></button>`;
+    listEl.innerHTML = `${item.value} <button class="btn-icon" onclick='editItem(${item.key})'><i class="fa-regular fa-pen-to-square"></i></i></button> <button class="btn-icon" onclick='deleteItem(${item.key})'><i class="fa-solid fa-trash-can"></i></button>`;
     itemEl.appendChild(listEl);
   });
 };

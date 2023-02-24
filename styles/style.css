@@ -108,4 +108,16 @@ input {
   font-size: 16px;
   font-weight: 600;
   text-align: start;
+  margin-top: 0.3rem;
+}
+
+.btn-icon {
+  height: 1.2rem;
+  width: auto;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  color: var(--silver-txt);
+  background: none;
+  cursor: pointer;
 }
