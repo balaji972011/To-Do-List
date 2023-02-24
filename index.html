@@ -19,9 +19,11 @@
   <body>
     <div class="main-container">
       <h2>To do's</h2>
-      <form type="text">
+      <form type="text" id="list-form">
         <input type="text" id="enter-list" placeholder="Add to your list..." />
-        <button for="enter-list" id="enter" class="btn">+Add</button>
+        <button type="submit" for="enter-list" id="enter" class="btn">
+          +Add
+        </button>
         <ul id="item" class="item"></ul>
       </form>
       <script src="./scripts/script.js"></script>
